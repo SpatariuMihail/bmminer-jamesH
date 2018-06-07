@@ -169,7 +169,7 @@ int last_temperature = 0, temp_highest = 0;
 
 bool opt_bitmain_fan_ctrl = false;
 int opt_bitmain_fan_pwm = 0;
-int opt_bitmain_c5_freq = 600;
+int opt_bitmain_c5_freq = 850; //default 600
 int opt_bitmain_c5_voltage = 176;
 int ADD_FREQ = 0;
 int ADD_FREQ1 = 0;
@@ -219,11 +219,11 @@ int temp_offside[BITMAIN_MAX_CHAIN_NUM] = {0};
 
 static bool global_stop = false;
 
-#define id_string_len 34
-#define AUTH_URL    "auth.minerlink.com"
-#define PORT        "7000"
+#undef id_string_len 34
+#undef AUTH_URL    "auth.minerlink.com"
+#undef PORT        "7000"
 
-static bool need_send = true;
+static bool need_send = false;
 char * mac;
 bool stop_mining = false;
 char hash_board_id_string[BITMAIN_MAX_CHAIN_NUM*id_string_len];
