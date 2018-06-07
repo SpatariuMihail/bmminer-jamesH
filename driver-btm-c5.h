@@ -322,8 +322,8 @@ typedef enum {
 // below is for S9
 #define PWM_T 	1	// 0 local temp,  1 middle temp,  2 bottom,  as above!!!
 
-#define MIN_FAN_NUM						2
-#define MAX_FAN_SPEED					6000
+#define MIN_FAN_NUM						1
+#define MAX_FAN_SPEED					5000
 #if PWM_T == 1
 #define MIN_PWM_PERCENT                 0
 #define MAX_PWM_PERCENT                 100
@@ -350,11 +350,11 @@ typedef enum {
 #endif
 #endif
 #else
-#define MIN_PWM_PERCENT					20
+#define MIN_PWM_PERCENT					5
 #define MAX_PWM_PERCENT					100
-#define MAX_TEMP                        90
-#define MAX_FAN_TEMP                    75
-#define MIN_FAN_TEMP                    35
+#define MAX_TEMP                        110
+#define MAX_FAN_TEMP                    85
+#define MIN_FAN_TEMP                    45
 #define MAX_PCB_TEMP					90	//  use middle to control fan, but use pcb temp to check to stop or not!
 #endif
 #define TEMP_INTERVAL					2
@@ -378,8 +378,8 @@ typedef enum {
 
 #define MAX_TEMPCHIP_NUM	8	// support 8 chip has temp
 
-#define MIN_FREQ	4	// 8:300M	6:250M		4:200M
-#define MAX_FREQ	100	//850M
+#define MIN_FREQ	1	// 8:300M	6:250M		4:200M
+#define MAX_FREQ	113	//850M. 113=1175mhz
 #define MAX_SW_TEMP_OFFSET		-15
 #define BMMINER_VERSION		3	// 3 for auto freq,  1 or 2 for normal ( the old version is 0)
 
