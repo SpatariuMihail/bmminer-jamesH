@@ -1537,7 +1537,7 @@ void CheckChainTempTooLowFlag()
 		if(dev->chain_exist[i] == 1)
 		{
 			if(chain_temp_toolow[i]==0)
-				isSomeBoardNotTooLow=true;
+				isSomeBoardNotTooLow=false;
 		}
 	}
 
