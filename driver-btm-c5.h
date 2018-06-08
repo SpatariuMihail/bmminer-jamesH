@@ -232,6 +232,12 @@
 
 #define UPRATE_PERCENT		2	// means we need reserved more 2% rate
 #else
+#define S9_20000_VOL_LIMITED		810
+#define S9_19000_VOL_LIMITED		820
+#define S9_18000_VOL_LIMITED		830
+#define S9_17000_VOL_LIMITED		840
+#define S9_16000_VOL_LIMITED		850
+#define S9_15000_VOL_LIMITED		860
 #define S9_14000_VOL_LIMITED		870
 #define S9_13500_VOL_LIMITED		880
 #define S9_13000_VOL_LIMITED		900
