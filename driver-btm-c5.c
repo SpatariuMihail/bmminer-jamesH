@@ -513,7 +513,19 @@ int getVoltageLimitedFromHashrate(int hashrate_GHz)
 		vol_value=S9_PLUS_LOWER_9000_VOL_LIMITED;
 #endif
 #else
-	if(hashrate_GHz>=14000)
+	if(hashrate_GHz>=20000)
+		vol_value=S9_20000_VOL_LIMITED;
+	else if(hashrate_GHz>=19000)
+		vol_value=S9_19000_VOL_LIMITED;
+	else if(hashrate_GHz>=18000)
+		vol_value=S9_18000_VOL_LIMITED;
+	else if(hashrate_GHz>=17000)
+		vol_value=S9_17000_VOL_LIMITED;
+	else if(hashrate_GHz>=16000)
+		vol_value=S9_16000_VOL_LIMITED;
+	else if(hashrate_GHz>=15000)
+		vol_value=S9_15000_VOL_LIMITED;
+	else if(hashrate_GHz>=14000)
 		vol_value=S9_14000_VOL_LIMITED;
 	else if(hashrate_GHz>=13500)
 		vol_value=S9_13500_VOL_LIMITED;
