@@ -719,7 +719,7 @@ struct pool *add_pool(void)
 {
     struct pool *pool;
 
-    pool = cgcalloc(sizeof(struct pool), (size_t)1);
+    pool = cgcalloc(sizeof(struct pool), 1);
 
 #ifdef USE_BITMAIN_C5
     pool->support_vil = false; // TODO: why does S9 not support vil mode?
